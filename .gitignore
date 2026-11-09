@@ -1,0 +1,71 @@
+# ===== Secrets & environment =====
+.env
+.env.*
+!.env.example
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+*.pfx
+*.pem
+*.key
+
+# ===== .NET / ASP.NET =====
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.dbmdl
+*.nupkg
+.vs/
+TestResults/
+*.trx
+coverage/
+*.coverage
+*.coveragexml
+publish/
+PublishScripts/
+project.lock.json
+launchSettings.json.user
+.dotnet/
+
+# Local databases
+*.mdf
+*.ldf
+*.sqlite
+*.db
+
+# ===== Node / Vue =====
+node_modules/
+dist/
+dist-ssr/
+.vite/
+.cache/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.tsbuildinfo
+frontend/coverage/
+frontend/.eslintcache
+
+# ===== Docker =====
+docker-compose.override.yml
+
+# ===== IDEs & editors =====
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*.swo
+*~
+
+# ===== OS files =====
+.DS_Store
+Thumbs.db
+desktop.ini
