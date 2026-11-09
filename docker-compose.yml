@@ -1,9 +1,9 @@
 services:
   proxy:
     image: nginx:stable-alpine
-    container_name: ${jEngineering}
+    container_name: ${Team_name}
     environment:
-      - VIRTUAL_HOST=${jEngineering}.atd.avans.nl
+      - VIRTUAL_HOST=${Team_name}.atd.avans.nl
       - VIRTUAL_PORT=80
     volumes:
       - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
@@ -35,7 +35,7 @@ services:
     restart: unless-stopped
 networks:
   my-project-network:
-    name: ${jEngineering}-network
+    name: ${Team_name}-network
     external: true
   proxy:
     external: true
