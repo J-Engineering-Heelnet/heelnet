@@ -46,7 +46,6 @@ heelnet/
 ├── frontend/        # Vue-applicatie
 ├── backend/         # ASP.NET Web API + tests
 ├── docs/            # Projectplan, testplan, executive summaries
-├── .github/         # Workflows, issue- en PR-templates
 ├── CONTRIBUTING.md
 └── README.md
 ```
@@ -55,8 +54,8 @@ heelnet/
 
 ### Vereisten
 
-- [.NET SDK](https://dotnet.microsoft.com/download) (versie: _TODO_)
-- [Node.js](https://nodejs.org/) LTS (versie: _TODO_)
+- [.NET SDK](https://dotnet.microsoft.com/download) 
+- [Node.js](https://nodejs.org/) LTS 
 - SQL Server (lokale installatie of Docker)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - Git
