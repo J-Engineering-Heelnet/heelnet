@@ -18,7 +18,7 @@ Branchnamen bevatten bij voorkeur de userstory nummer: `feature/12-afspraak-make
 
 ## Werkwijze per user story
 
-1. Pak een issue op die voldoet aan de **Definition of Ready** (acceptance criteria zijn duidelijk) en zet het op "In progress".
+1. Pak een user story op die voldoet aan de **Definition of Ready** (acceptance criteria zijn duidelijk) en zet het op "In progress".
 2. Maak een `feature/`-branch vanaf `develop`.
 3. Commit regelmatig met duidelijke berichten.
 4. Open een pull request naar `develop` en koppel het issue.
