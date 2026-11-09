@@ -1,6 +1,8 @@
 services:
   db:
     image: mcr.microsoft.com/mssql/server:2022-latest
+    ports:
+      - "1433:1433"
     environment:
       SA_PASSWORD: "${SA_PASSWORD}"
       ACCEPT_EULA: "Y"
@@ -35,7 +37,6 @@ services:
     image: nginx:stable-alpine
     ports:
       - "80:80"
-      - "1433:1433"
     volumes:
       - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
     depends_on:
