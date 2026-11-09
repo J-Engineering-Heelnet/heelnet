@@ -43,8 +43,8 @@ Het ziekenhuis gebruikt nu een handmatig afsprakensysteem dat inefficiënt en fo
 
 ```
 heelnet/
-├── frontend/        # Vue-applicatie
-├── backend/         # ASP.NET Web API + tests
+├── client/        # Vue-applicatie
+├── server/         # ASP.NET Web API + tests
 ├── docs/            # Projectplan, testplan, executive summaries
 ├── CONTRIBUTING.md
 └── README.md
@@ -63,7 +63,7 @@ heelnet/
 ### Backend
 
 ```bash
-cd backend
+cd server
 dotnet restore
 dotnet run
 ```
@@ -71,7 +71,7 @@ dotnet run
 ### Frontend
 
 ```bash
-cd frontend
+cd client
 npm ci
 npm run dev
 ```
@@ -101,10 +101,10 @@ Kopieer `.env.example` naar `.env` en vul de waarden in. Commit nooit geheimen o
 
 ```bash
 # Backend
-cd backend && dotnet test
+cd server && dotnet test
 
 # Frontend
-cd frontend && npm run test
+cd client && npm run test
 ```
 
 Tests draaien automatisch bij elke pull request via GitHub Actions. De teststrategie en de Definition of Done staan beschreven in `docs/`.
