@@ -16,7 +16,7 @@ builder.Services.AddLogging(builder =>
         .SetMinimumLevel(LogLevel.Information));
 
 // Prefer environment variable for connection string if present
-var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__DefaultConnenction")
+var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__MyConnection")
     ?? builder.Configuration.GetConnectionString("DefaultConnenction");
 Console.WriteLine($"Using connection string: {connectionString}");
 
