@@ -110,16 +110,4 @@ cd frontend && npm run test
 
 Tests draaien automatisch bij elke pull request via GitHub Actions. De teststrategie en de Definition of Done staan beschreven in `docs/`.
 
-## Documentatie
 
-- Projectplan: `docs/` _(TODO)_
-- Testplan: `docs/` _(TODO)_
-- Product backlog: GitHub Projects-bord _(TODO: link)_
-
-## Team
-
-| Naam | Rol |
-| ---- | --- |
-| _TODO_ | _TODO_ |
-
-Vak: Projectmatig software ontwikkelen
