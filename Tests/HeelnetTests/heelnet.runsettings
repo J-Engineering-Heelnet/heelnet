@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Instellingen voor iedere testrun (Visual Studio Test Explorer én 'dotnet test').
+
+  HEELNET_BASE_URL  : waar de applicatie draait. Met docker-compose.dev.yml is dat http://localhost
+                      (nginx-proxy: frontend op /, API op /api).
+  HEELNET_HEADLESS  : false = browser zichtbaar laten meekijken.
+  HEELNET_VERSION   : optioneel label van de geteste oplevering (bijv. "sprint2"). Leeg = git-branch.
+
+  De databaseverbinding staat hier bewust NIET in (geen wachtwoorden in git). Die wordt
+  samengesteld uit SA_PASSWORD en DATABASE_NAME in de .env in de root van de repository,
+  of zet HEELNET_DB_CONNECTION als omgevingsvariabele op je eigen machine.
+-->
+<RunSettings>
+  <RunConfiguration>
+    <EnvironmentVariables>
+      <HEELNET_BASE_URL>http://localhost</HEELNET_BASE_URL>
+      <HEELNET_HEADLESS>true</HEELNET_HEADLESS>
+    </EnvironmentVariables>
+  </RunConfiguration>
+</RunSettings>
